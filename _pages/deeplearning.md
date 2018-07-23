@@ -4,7 +4,7 @@ permalink: /deep-learning/
 title: "Deep Learning Note"
 author_profile: true
 header:
-    image: "/images/fort point.png"
+    image: "/images/Sk Technopark.jpg"
 ---
 
 {% include base_path %}
