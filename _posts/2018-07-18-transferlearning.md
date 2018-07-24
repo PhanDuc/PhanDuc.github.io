@@ -60,7 +60,7 @@ for image in imageGen:
     # Break when reached  10 examples
     if total == 10:
         break
-
+```
 In here, I used some parameters:
 * The `rotation_range` parameter control the degree range of the random rotation, allow input image to be randomly rotated 30 degree.
 * Both `width_shift_range` and `height_shift_range` are used for horizontal and vertical shifts, respectively. The value is a fraction of the given dimension, 20% in this case
@@ -88,7 +88,8 @@ There are two benefit with this crop,
 I repeated that steps with all the pairs of camera and screen I had. Then after all I can generated around 200.000 spoof images.
 
 ```
-### Build Model
+### Build The Model
+
 
 Content of the post i wrote
 
