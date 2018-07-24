@@ -78,8 +78,8 @@ This is a fake image
 
 
 Then from each output images, I made 10 crop in random location with the size of each small image is 
-`Width = Width of Original Image // 4`
-`Height = Width of Original Image // 4`
+* Width = Width of Original Image // 4
+* Height = Width of Original Image // 4
 
 There are two benefit with this crop,
 1.	Increase the number of images
@@ -87,23 +87,18 @@ There are two benefit with this crop,
 
 I repeated that steps with all the pairs of camera and screen I had. Then after all I can generated around 200.000 spoof images.
 
-```
+Now we are good to move to the next step!
+
 ### Build The Model
 
+I decided to used some pre-trained models then compare between to choice the best one.
+Here is the pre-trained model that I used to tested:
+* inception_v3[link](http://arxiv.org/abs/1512.00567) - download[link](http://download.tensorflow.org/models/inception_v3_2016_08_28.tar.gz)
+* inception_v4[link](http://arxiv.org/abs/1602.07261) - download[link](http://download.tensorflow.org/models/inception_v4_2016_09_09.tar.gz)
+* inception_resnet_v2[link](http://arxiv.org/abs/1602.07261) - download[link](http://download.tensorflow.org/models/inception_resnet_v2_2016_08_30.tar.gz)
 
-Content of the post i wrote
 
 *text*
 
 **bold**
-
-What about a [link](https://github.com/phanduc)
-
-
-Code block:
-```python
-import numpy as np
-```
-
-inline code 'x + y + z'
 
