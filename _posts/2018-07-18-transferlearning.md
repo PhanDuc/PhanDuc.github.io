@@ -25,6 +25,42 @@ Below is the number of device I used in this project
 
 **Note that: Each camera will take approximately 200-300 images from different screens in different light condition**
 
+Example images of spoof:
+Used Iphone SE to took photos from Samsung A7 in outdoor light condition
+![alt]({{ site.url }}{{ site.baseurl }}/images/fake1.jpg)
+Oppo F5 camera and Ipad Air 1 screen, indoor light
+![alt]({{ site.url }}{{ site.baseurl }}/images/fake2.jpg)
+Samsung A7 camera and Monitor HP, under sun light.
+![alt]({{ site.url }}{{ site.baseurl }}/images/fake3.jpg)
+Image from the book product, taken by Samsung A7 (2016)
+![alt]({{ site.url }}{{ site.baseurl }}/images/fake4.jpg)
+
+To understand data augmentation applied to computer task, I decided to visualize a given input being augmented and distorted. In this step, I made Python script that uses Keras to perform data augmentation.
+'''python
+aug = ImageDataGenerator(rotation_range     = 30,
+                             width_shift_range  = 0.2,
+                             height_shift_range = 0.2,
+                             shear_range = 0.2,
+                             zoom_range  = 0.2,
+                             horizontal_flip = True,
+                             channel_shift_range= 0.15,
+                             fill_mode       = "nearest")
+
+total = 0
+#print("[INFO] generating images...")
+imageGen = aug.flow(image,
+                    batch_size=1,
+                    save_to_dir = args["output"],
+                    save_prefix = os.path.splitext(file)[0],
+                    save_format="jpg")
+
+for image in imageGen:
+    total += 1
+    # Break when reached  10 examples
+    if total == 10:
+        break
+
+'''
 ### H3 Heading
 
 Content of the post i wrote
