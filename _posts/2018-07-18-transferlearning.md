@@ -6,7 +6,7 @@ header:
     image: "/images/perceptron/percept.jpg"
 excerpt: "Deep Learning, Machine Learning, Data Science"
 mathjax: "true"
-toc: true
+#toc: true
 toc_label: "Table of Content"
 toc_icon: "heart"  
 ---

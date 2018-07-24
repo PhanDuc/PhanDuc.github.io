@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /deep-learning/
-title: "Deep Learning Project"
+title: "Deep Learning Projects"
 author_profile: true
 header:
     image: "/images/Sk Technopark.jpg"
