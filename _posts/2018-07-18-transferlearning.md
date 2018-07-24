@@ -35,8 +35,9 @@ Samsung A7 camera and Monitor HP, under sun light.
 Image from the book product, taken by Samsung A7 (2016)
 <img src="{{ site.url }}{{ site.baseurl }}/images/fake4.jpg" alt="linearly separable data">
 
-To understand data augmentation applied to computer task, I decided to visualize a given input being augmented and distorted. In this step, I made Python script that uses Keras to perform data augmentation.
-'''python
+To understand data augmentation applied to computer task, I decided to visualize a given input being augmented and distorted. 
+In this step, I made Python script that uses Keras to perform data augmentation.
+```python
 aug = ImageDataGenerator(rotation_range     = 30,
                              width_shift_range  = 0.2,
                              height_shift_range = 0.2,
@@ -59,8 +60,35 @@ for image in imageGen:
     # Break when reached  10 examples
     if total == 10:
         break
-'''
-### H3 Heading
+
+In here, I used some parameters:
+* The `rotation_range` parameter control the degree range of the random rotation, allow input image to be randomly rotated 30 degree.
+* Both `width_shift_range` and `height_shift_range` are used for horizontal and vertical shifts, respectively. The value is a fraction of the given dimension, 20% in this case
+* The `shear_range` controls the angle in counterclockwise direction as radians in which image will allowed to be sheared.
+* The `zoom_range`, make image to be zoomed in or zoomed out in the range of value: `[1 – zoom_range, 1 + zoom_range]`
+* The `channel_shift_range`, will make input channel random shifts.
+* The `horizontal_flip` boolean controls whether or not a given input is allowed to be flipped horizontally during the training process.
+* And the last parameter, `fill_mode` will points outside the boundaries of the input are filled according to the given mode:
+
+For more detail, please refer to [link](https://keras.io/preprocessing/image/)
+Lets see how the resuls
+
+This is a fake image
+
+
+
+Then from each output images, I made 10 crop in random location with the size of each small image is 
+`Width = Width of Original Image // 4`
+`Height = Width of Original Image // 4`
+
+There are two benefit with this crop,
+1.	Increase the number of images
+2.	Pretrained models given input images in square
+
+I repeated that steps with all the pairs of camera and screen I had. Then after all I can generated around 200.000 spoof images.
+
+```
+### Build Model
 
 Content of the post i wrote
 
@@ -72,9 +100,9 @@ What about a [link](https://github.com/phanduc)
 
 
 Code block:
-'''python
+```python
 import numpy as np
-'''
+```
 
 inline code 'x + y + z'
 
