@@ -27,13 +27,13 @@ Below is the number of device I used in this project
 
 Example images of spoof:
 Used Iphone SE to took photos from Samsung A7 in outdoor light condition
-![alt]({{ site.url }}{{ site.baseurl }}/images/fake1.jpg)
+<img src="{{ site.url }}{{ site.baseurl }}/images/fake1.jpg" alt="linearly separable data">
 Oppo F5 camera and Ipad Air 1 screen, indoor light
-![alt]({{ site.url }}{{ site.baseurl }}/images/fake2.jpg)
+<img src="{{ site.url }}{{ site.baseurl }}/images/fake2.jpg" alt="linearly separable data">
 Samsung A7 camera and Monitor HP, under sun light.
-![alt]({{ site.url }}{{ site.baseurl }}/images/fake3.jpg)
+<img src="{{ site.url }}{{ site.baseurl }}/images/fake3.jpg" alt="linearly separable data">
 Image from the book product, taken by Samsung A7 (2016)
-![alt]({{ site.url }}{{ site.baseurl }}/images/fake4.jpg)
+<img src="{{ site.url }}{{ site.baseurl }}/images/fake4.jpg" alt="linearly separable data">
 
 To understand data augmentation applied to computer task, I decided to visualize a given input being augmented and distorted. In this step, I made Python script that uses Keras to perform data augmentation.
 '''python
@@ -59,7 +59,6 @@ for image in imageGen:
     # Break when reached  10 examples
     if total == 10:
         break
-
 '''
 ### H3 Heading
 
