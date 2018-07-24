@@ -92,10 +92,12 @@ Now we are good to move to the next step!
 ### Build The Model
 
 I decided to used some pre-trained models then compare between to choice the best one.
+
 Here is the pre-trained model that I used to tested:
-* inception_v3[link](http://arxiv.org/abs/1512.00567) - download[link](http://download.tensorflow.org/models/inception_v3_2016_08_28.tar.gz)
-* inception_v4[link](http://arxiv.org/abs/1602.07261) - download[link](http://download.tensorflow.org/models/inception_v4_2016_09_09.tar.gz)
-* inception_resnet_v2[link](http://arxiv.org/abs/1602.07261) - download[link](http://download.tensorflow.org/models/inception_resnet_v2_2016_08_30.tar.gz)
+
+* inception_v3 [paper](http://arxiv.org/abs/1512.00567) - [download](http://download.tensorflow.org/models/inception_v3_2016_08_28.tar.gz)
+* inception_v4 [paper](http://arxiv.org/abs/1602.07261) - [download](http://download.tensorflow.org/models/inception_v4_2016_09_09.tar.gz)
+* inception_resnet_v2 [paper](http://arxiv.org/abs/1602.07261) - [download](http://download.tensorflow.org/models/inception_resnet_v2_2016_08_30.tar.gz)
 
 **Softmax** output
 
