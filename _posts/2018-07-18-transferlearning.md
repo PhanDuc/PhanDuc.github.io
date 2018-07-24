@@ -1,5 +1,5 @@
 ---
-title: "Deep Learning Project: Transfer learning"
+title: "Deep Learning Project: Anti-Spoofing Image"
 date: 2018-07-18
 tages: [machine lerning, data science, deep learning, neural network]
 header:
@@ -7,7 +7,7 @@ header:
 excerpt: "Deep Learning, Machine Learning, Data Science"
 mathjax: "true"
 toc: true
-toc_label: "Unique Title"
+toc_label: "Table of Content"
 toc_icon: "heart"  
 ---
 
@@ -97,6 +97,7 @@ Here is the pre-trained model that I used to tested:
 * inception_v4[link](http://arxiv.org/abs/1602.07261) - download[link](http://download.tensorflow.org/models/inception_v4_2016_09_09.tar.gz)
 * inception_resnet_v2[link](http://arxiv.org/abs/1602.07261) - download[link](http://download.tensorflow.org/models/inception_resnet_v2_2016_08_30.tar.gz)
 
+**Softmax** output
 
 *text*
 
