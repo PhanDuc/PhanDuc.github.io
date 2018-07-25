@@ -1,5 +1,5 @@
 ---
-title: "Deep Learning Project: Anti-Spoofing Image"
+title: "Deep Learning Project: Image Anti-Spoofing"
 date: 2018-07-18
 tags: [deep learning]
 header:
