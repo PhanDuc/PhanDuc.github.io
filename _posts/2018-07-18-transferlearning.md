@@ -12,8 +12,8 @@ mathjax: "true"
 ---
 
 ## 1. Introduction
-In this post, I want to write about how I can perform transfer learning using the official pre-trained model offered by Google, which can be found in TensorFlow’s model library [link](https://github.com/tensorflow/models/tree/master/research/slim).
-This project is a part of my summer industrial internships at Inspector Cloud Company[link](https://inspector-cloud.ru/), where they are a successful company in retail. The goal of this project was to build a Deep Learning model that can recognize genuine and spoof image.
+In this post, I want to write about how I can perform transfer learning using the official pre-trained model offered by Google, which can be found in TensorFlow’s [model library](https://github.com/tensorflow/models/tree/master/research/slim).
+This project is a part of my summer industrial internships at [Inspector Cloud](https://inspector-cloud.ru/), where they are a successful company in retail. The goal of this project was to build a Deep Learning model that can recognize genuine and spoof image.
 
 ## 2. Building DataSet 
 They had many genuine images but very few spoofing image, the first thing I need to do before use any deep learning model that I needed to increase the number of spoof image in the different ways. It is essential to develop robust and efficient spoof detection that generalize well to new imaging conditions and environments. 
