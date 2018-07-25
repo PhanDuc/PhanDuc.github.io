@@ -11,7 +11,7 @@ toc_icon: "heart"
 mathjax: "true"
 ---
 
-# 1. Introduction
+## 1. Introduction
 In this post, I want to write about how I can perform transfer learning using the official pre-trained model offered by Google, which can be found in TensorFlow’s model library [link](https://github.com/tensorflow/models/tree/master/research/slim).
 This project is a part of my summer industrial internships at Inspector Cloud Company[link](https://inspector-cloud.ru/), where they are a successful company in retail. The goal of this project was to build a Deep Learning model that can recognize genuine and spoof image.
 
@@ -90,7 +90,7 @@ I repeated that steps with all the pairs of camera and screen I had. Then after 
 
 Now we are good to move to the next step!
 
-### 3. Build The Model
+## 3. Build The Model
 
 I decided to used some pre-trained models then compare between to choice the best one.
 
@@ -112,7 +112,7 @@ Then I used the final layer sigmoid activation, which is perfect for a binary cl
 
 Traning process....
 
-#### 4. Result
+## 4. Result
 
 ....I had several models after training completed, now I will do **Test Time Augmentation(TTA)**. What this means is that I'm going to take `x` crop at random, then calculate predictions for all these images, take the average, and make that final prediction.
 
@@ -286,7 +286,7 @@ After that, the leader decided to wait until we have more unseen of fake data fr
 
 
 
-##### 5. Conclution
+## 5. Conclution
 
 For me, this is very interesting project that I joined from the beginning. From prepare data to trained models then tested and made the final decision.
 - Make sure we got the dataset that contains all the subjects we need and in different perspective that can enable to find correct solutions and increase the recall score.
