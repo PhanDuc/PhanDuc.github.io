@@ -1,7 +1,7 @@
 ---
 title: "Deep Learning Project: Anti-Spoofing Image"
 date: 2018-07-18
-tags: [machine lerning, data science, deep learning, neural network]
+tags: [deep learning]
 header:
     image: "/images/perceptron/percept.jpg"
 excerpt: "Deep Learning, Machine Learning, Data Science"
